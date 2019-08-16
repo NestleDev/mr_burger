@@ -47,35 +47,35 @@ a {
 
 @font-face {
   font-family: 'Gagalin';
-  src: url("../../../fonts/gagalin/gagalin-regular-webfont.woff2") format("woff2"), url("../../../fonts/gagalin/gagalin-regular-webfont.woff") format("woff");
+  src: url("./../../fonts/gagalin/gagalin-regular-webfont.woff2") format("woff2"), url("./../../fonts/gagalin/gagalin-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("../../../fonts/lifehack/lifehack_medium-webfont.woff2") format("woff2"), url("../../../fonts/lifehack/lifehack_medium-webfont.woff") format("woff");
+  src: url("./../../fonts/lifehack/lifehack_medium-webfont.woff2") format("woff2"), url("./../../fonts/lifehack/lifehack_medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../../fonts/ubuntu/ubuntu-bold-webfont.woff2") format("woff2"), url("../../../fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff");
+  src: url("./../../fonts/ubuntu/ubuntu-bold-webfont.woff2") format("woff2"), url("./../../fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2"), url("../../../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
+  src: url("./../../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2"), url("./../../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2"), url("../../../fonts/ubuntu/ubuntu-medium-webfont.woff") format("woff");
+  src: url("./../../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2"), url("./../../fonts/ubuntu/ubuntu-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -83,7 +83,7 @@ a {
 .first-screen {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../img/first-screen/bg.png");
+  background-image: url("./../../img/first-screen/bg.png");
   background-size: cover;
 }
 
@@ -241,7 +241,7 @@ a {
   position: absolute;
   left: -34px;
   top: 68px;
-  background-image: url("../../img/first-screen/drops.png");
+  background-image: url("./../../img/first-screen/drops.png");
 }
 
 .introduction__desc {
@@ -296,7 +296,7 @@ a {
 .best-screen {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../img/best-screen/bg.png");
+  background-image: url("./../../img/best-screen/bg.png");
   background-size: cover;
 }
 
