@@ -85,6 +85,20 @@ a {
   height: 100vh;
   background-image: url("../img/first-screen/bg.png");
   background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.first-screen:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("../img/first-screen/texture.png");
+  background-size: cover;
+  z-index: -10;
 }
 
 .first-screen .container {
@@ -188,6 +202,10 @@ a {
   text-transform: uppercase;
 }
 
+.menu__link:hover {
+  text-decoration: underline;
+}
+
 .menu__order-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +221,12 @@ a {
   margin-left: 5px;
   background-color: #e45028;
   border-radius: 6px;
+}
+
+.menu__order-button:hover {
+  background-color: #c13c18;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu__order-button-text {
@@ -496,6 +520,7 @@ a {
   position: fixed;
   top: 100px;
   right: 50px;
+  z-index: +10;
 }
 
 .points__item-link {

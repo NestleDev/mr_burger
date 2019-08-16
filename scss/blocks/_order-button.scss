@@ -8,6 +8,11 @@
   background-color: #e45028;
   border-radius: 6px;
 
+  &:hover {
+    background-color: darken(#e45028, 10%);
+    transition: 0.3s;
+  }
+
   &-text {
     color: #ffffff;
     font-family: Ubuntu;
