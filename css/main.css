@@ -83,7 +83,7 @@ a {
 .first-screen {
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/first-screen/bg.png");
+  background-image: url("../img/first-screen/bg.png");
   background-size: cover;
 }
 
@@ -241,7 +241,7 @@ a {
   position: absolute;
   left: -34px;
   top: 68px;
-  background-image: url("../../../img/first-screen/drops.png");
+  background-image: url("../img/first-screen/drops.png");
 }
 
 .introduction__desc {
@@ -296,7 +296,7 @@ a {
 .best-screen {
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/best-screen/bg.png");
+  background-image: url("../img/best-screen/bg.png");
   background-size: cover;
 }
 
