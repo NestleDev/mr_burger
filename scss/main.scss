@@ -15,15 +15,24 @@
 @import "./blocks/title";
 @import "./blocks/scroll-down";
 
+@import "./screens/burgers-screen";
+
+
 /*best screen*/
 @import "./screens/best-screen";
 @import "./blocks/features";
 @import "./blocks/feature-card";
 
-/*screens*/
-@import "./screens/burgers-screen";
+/*team screen*/
 @import "./screens/team-screen";
+@import "./blocks/team";
+@import "./blocks/accordeon";
+@import "./blocks/member";
+
+
+/*menu screen*/
 @import "./screens/menu-screen";
+
 
 /*reviews screen*/
 @import "./screens/reviews-screen";
