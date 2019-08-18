@@ -582,14 +582,22 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .introduction__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
-  margin-left: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .introduction__logo:before {
@@ -598,12 +606,20 @@ img {
   width: 451px;
   height: 241px;
   position: absolute;
-  left: -34px;
-  top: 68px;
+  right: 0;
+  bottom: 115px;
   background-image: url("../img/first-screen/drops.png");
 }
 
+.introduction__img {
+  margin-right: 0;
+  display: block;
+}
+
 .introduction__desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,15 +628,17 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 .introduction__subtitle {
+  margin-bottom: 64px;
+  margin-top: 17px;
   color: #ffffff;
   font-family: Lifehack;
   font-size: 65px;
