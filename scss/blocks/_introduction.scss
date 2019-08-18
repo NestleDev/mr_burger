@@ -5,6 +5,7 @@
   &__logo {
     position: relative;
     margin-left: 34px;
+    max-width: 100%;
 
     &:before {
       content: "";

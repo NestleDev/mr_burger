@@ -587,6 +587,7 @@ p {
 .introduction__logo {
   position: relative;
   margin-left: 34px;
+  max-width: 100%;
 }
 
 .introduction__logo:before {
@@ -788,8 +789,21 @@ p {
 }
 
 .review-card {
+  width: 25%;
+  height: 50%;
   position: relative;
   background-color: #000;
+}
+
+.review-card__cover {
+  width: 100%;
+  height: 100%;
+}
+
+.review-card__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .review-card__desc {
@@ -813,12 +827,6 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.review-card__img {
-  display: block;
-  width: 25vw;
-  height: 50vh;
 }
 
 .review-card:hover .review-card__desc {
