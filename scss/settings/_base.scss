@@ -15,6 +15,11 @@ html, body {
   flex-direction: column;
 }
 
+.container {
+  margin: 0 auto;
+  height: 100%;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -37,4 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }

@@ -1,6 +1,5 @@
 .introduction {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: flex-start;
 
   &__logo {
@@ -23,11 +22,12 @@
     margin-left: 12px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   &__title {
+    margin-top: 152px;
     color: #f9b43b;
     font-family: Gagalin;
     font-size: 72px;
@@ -39,15 +39,6 @@
     font-family: Lifehack;
     font-size: 65px;
     font-weight: 500;
-  }
-
-  &__another-subtitle {
-    font-family: Lifehack;
-    font-weight: 500;
-    letter-spacing: -1.63px;
-    color: #ffffff;
-    font-family: Lifehack;
-    font-size: 65px;
-
+    line-height: 85px;
   }
 }

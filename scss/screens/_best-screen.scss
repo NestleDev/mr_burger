@@ -1,0 +1,13 @@
+.best-screen {
+  @include screen();
+  background-image: url('../img/best-screen/bg.png');
+  background-size: cover;
+
+  .container {
+    width: 921px;
+    display: flex;
+    flex-wrap: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,6 +1,7 @@
 .first-screen {
-  width: 100vw;
-  height: 100vh;
+  @include screen();
+  padding-top: 12px;
+  padding-bottom: 41px;
   background-image: url('../img/first-screen/bg.png');
   background-size: cover;
   position: relative;
@@ -18,12 +19,8 @@
     z-index: -10;
   }
 
-
-
   .container {
-    width: 943px;
-    margin: 0 auto;
-    height: 100%;
+    width: 940px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;

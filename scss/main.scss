@@ -1,7 +1,12 @@
-@import "./layout/base";
-@import "./layout/fonts";
+/*import settings*/
+@import "./settings/vars";
+@import "./settings/fonts";
+@import "./settings/mixins";
+@import "./settings/normalize";
+@import "./settings/base";
 
-@import "./layout/first-screen";
+/*first screen*/
+@import "./screens/first-screen";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/menu";
@@ -9,9 +14,22 @@
 @import "./blocks/introduction";
 @import "./blocks/scroll-down";
 
-@import "./layout/best-screen";
-@import "./layout/burgers-screen";
-@import "./layout/team-screen";
-@import "./layout/menu-screen";
-@import "./layout/reviews-screen";
+/*best screen*/
+@import "./screens/best-screen";
+@import "./blocks/features";
+@import "./blocks/feature-card";
+
+/*screens*/
+@import "./screens/burgers-screen";
+@import "./screens/team-screen";
+@import "./screens/menu-screen";
+
+/*reviews screen*/
+@import "./screens/reviews-screen";
+@import "./blocks/reviews";
+@import "./blocks/review-card";
+
+
+
+/*fixed menu*/
 @import "./blocks/points";
