@@ -4,6 +4,18 @@
   right: 50px;
   z-index: +10;
 
+  &__item:hover  &__link {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+  &__item--active &__link {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
   &__link {
     display: block;
     width: 16px;
@@ -23,19 +35,6 @@
       height: 6px;
       background-color: #fff;
       border-radius: 50%;
-
-    }
-
-  &:hover {
-    border: 1px solid rgba(255, 255, 255, 1);
-    transform: scale(1);
-    transition: 0.5s;
-  }
-    
-      
-
-    &--active {
-      border: 1px solid rgba(255, 255, 255, 1);
     }
   }
 }

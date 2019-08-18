@@ -1,0 +1,28 @@
+.button {
+  padding: 13px 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--bg-red {
+    background-color: #e45028;
+
+    &:hover {
+      background-color: darken(#e45028, 10%);
+      transition: 0.3s;
+    }
+  }
+
+  &--bg-black {
+    background-color: #2f3234;
+
+    &:hover {
+      background-color: #000;
+      transition: 0.3s;
+    }
+  }
+}
+

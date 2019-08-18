@@ -22,16 +22,8 @@
     margin-left: 12px;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-  }
-
-  &__title {
-    margin-top: 152px;
-    color: #f9b43b;
-    font-family: Gagalin;
-    font-size: 72px;
-    font-weight: 400;
   }
 
   &__subtitle {
@@ -39,6 +31,7 @@
     font-family: Lifehack;
     font-size: 65px;
     font-weight: 500;
-    line-height: 85px;
+    line-height: 60px;
+    letter-spacing: -1.63px;
   }
 }
