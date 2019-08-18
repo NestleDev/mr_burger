@@ -433,6 +433,10 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*first screen*/
 .first-screen {
   width: 100vw;
@@ -488,7 +492,6 @@ p {
 }
 
 .logo {
-  max-width: 100%;
   display: block;
 }
 
@@ -587,7 +590,6 @@ p {
 .introduction__logo {
   position: relative;
   margin-left: 34px;
-  max-width: 100%;
 }
 
 .introduction__logo:before {
@@ -720,10 +722,6 @@ p {
   height: 89px;
 }
 
-.feature-card__logo-img {
-  max-width: 100%;
-}
-
 .feature-card__desc {
   text-align: center;
 }
@@ -803,7 +801,7 @@ p {
 .review-card__img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  height: 100%;
 }
 
 .review-card__desc {
