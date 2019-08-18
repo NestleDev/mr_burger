@@ -573,7 +573,7 @@ img {
 }
 
 .button--bg-black:hover {
-  background-color: #000;
+  background-color: #1f2122;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -823,6 +823,7 @@ img {
 }
 
 .member__name {
+  margin-left: 20px;
   cursor: pointer;
   color: #fff;
   font-family: Gagalin;
@@ -847,6 +848,7 @@ img {
 }
 
 .member__info {
+  margin-left: 20px;
   margin-top: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
