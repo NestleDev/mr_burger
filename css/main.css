@@ -986,17 +986,17 @@ img {
 }
 
 .menu-item__name--meat {
-  background-image: url("../../img/menu-screen/meat.png");
+  background-image: url("../img/menu-screen/meat.png");
   background-size: cover;
 }
 
 .menu-item__name--vegan {
-  background-image: url("../../img/menu-screen/vegan.png");
+  background-image: url("../img/menu-screen/vegan.png");
   background-size: cover;
 }
 
 .menu-item__name--diet {
-  background-image: url("../../img/menu-screen/diet.png");
+  background-image: url("../img/menu-screen/diet.png");
   background-size: cover;
 }
 
