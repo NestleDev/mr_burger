@@ -1137,6 +1137,104 @@ img {
   margin-bottom: 17px;
 }
 
+/*order screen*/
+.order-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: #181818;
+  background-image: url("../img/order-screen/bg-texture.png");
+  background-size: cover;
+}
+
+.order-screen .container {
+  width: 940px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.form__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.form__column:first-child {
+  margin-left: 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form__row:last-child {
+  margin-bottom: 0;
+}
+
+.input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.input:first-child {
+  margin-left: 0;
+}
+
+.input__title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.input__text {
+  padding: 12px 21px;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid #d1cfcb;
+  background-color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input__text:focus {
+  border: 2px solid #f9b43b;
+}
+
+.input__text--textarea {
+  height: 143px;
+  resize: none;
+}
+
 /*fixed menu*/
 .points {
   position: fixed;
