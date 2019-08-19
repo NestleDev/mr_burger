@@ -923,7 +923,127 @@ img {
 .menu-screen {
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
+  background-image: url("../img/menu-screen/menu.png");
+  background-size: cover;
+  position: relative;
+}
+
+.menu-screen .title {
+  position: absolute;
+  top: 111px;
+  left: 102px;
+}
+
+.accordeon-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-item__name {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-item__name:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f3234;
+  opacity: 0.5;
+}
+
+.menu-item__name--meat {
+  background-image: url("../../img/menu-screen/meat.png");
+  background-size: cover;
+}
+
+.menu-item__name--vegan {
+  background-image: url("../../img/menu-screen/vegan.png");
+  background-size: cover;
+}
+
+.menu-item__name--diet {
+  background-image: url("../../img/menu-screen/diet.png");
+  background-size: cover;
+}
+
+.menu-item__title {
+  margin-bottom: 40px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 40px;
+  font-weight: 400;
+  z-index: 10;
+}
+
+.menu-item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2f3234;
+  opacity: 0.93;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-item__text p {
+  width: 90%;
+  margin-top: 61px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.menu-item--active .menu-item__text {
+  width: 541px;
+}
+
+.menu-item--active .menu-item__title {
+  color: #f9b43b;
 }
 
 /*reviews screen*/

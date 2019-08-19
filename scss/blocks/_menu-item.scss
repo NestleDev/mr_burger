@@ -1,0 +1,83 @@
+.menu-item {
+  height: 100%;
+  display: flex;
+
+  &__name {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #2f3234;
+      opacity: 0.5;
+    }
+
+    &--meat {
+      background-image: url('../../img/menu-screen/meat.png');
+      background-size: cover;
+    }
+
+    &--vegan {
+      background-image: url('../../img/menu-screen/vegan.png');
+      background-size: cover;
+      
+    }
+
+    &--diet {
+      background-image: url('../../img/menu-screen/diet.png');
+      background-size: cover;
+  
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 10;
+    
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    background-color: #2f3234;
+    opacity: 0.93;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__text p {
+    width: 90%;
+    margin-top: 61px;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &--active &__text {
+    width: 541px;
+  }
+
+  &--active &__title {
+    color: #f9b43b;
+  }
+}
