@@ -1,12 +1,43 @@
 .input {
-  flex: 1;
-  margin-left: 20px;
+  &--w-25 {
+    width: calc(100% / 4 - 20px);
+  }
+
+  &--w-50 {
+    width: calc(50% - 10px);
+  }
+
+  &--w-100 {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &--textarea {
+    flex: 1;
+    height: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--radio  {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &--checkbox  {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
 
   &:first-child {
     margin-left: 0;
   }
-
-
 
   &__title {
     color: #ffffff;
@@ -17,7 +48,6 @@
   }
  
   &__text {
-
     padding: 12px 21px;
     color: #2f3234;
     font-family: Ubuntu;
@@ -30,13 +60,69 @@
     border-radius: 5px;
     outline: none;
 
+    &--textarea {
+      flex: 1;
+      display: block;
+      resize: none;
+    }
+
     &:focus{
       border: 2px solid #f9b43b;
     }
+  }
 
-    &--textarea {
-      height: 143px;
-      resize: none;
+  &__radio {
+    display: none;
+
+    &--visible {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    &:checked + &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+      background-color: #e35028;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &--visible {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    &:checked + &:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 10%;
+      left: 10%;
+      bottom: 10%;
+      right: 10%;
+      background-image: url('../img/order-screen/w128h1281338911632checkmark2.png');
+      background-position: center center;
+      background-size: cover;
     }
   }
 }

@@ -297,6 +297,7 @@
       <section id="order" class="order-screen">
         <div class="container">
           <h2 class="title title--color-orange">Закажите доставку</h2>
+          <!--
           <form action="" class="form">
             <div class="form__column form__column--left">
               <div class="form__row">
@@ -342,11 +343,94 @@
                 </label>
               </div>
               <div class="form__row">
-                  <label class="input">
-                    <div class="input__title">Комментарий</div>
-                    <textarea name="" class="input__text input__text--textarea"></textarea>
-                  </label>
-                </div>
+                <label class="input input--radio">
+                  <input  class="input__radio" name="radio" type="radio">
+                  <span class="input__radio input__radio--visible"></span>
+                  <span class="input__title">Потребуется сдача</span>
+                </label>
+                <label class="input input--radio">
+                  <input  class="input__radio" name="radio" type="radio">
+                  <span class="input__radio input__radio--visible"></span>
+                  <span class="input__title">Оплата по карте</span>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="input input--checkbox">
+                  <input  class="input__checkbox" name="radio" type="checkbox">
+                  <span class="input__checkbox input__checkbox--visible"></span>
+                  <span class="input__title">Не перезванивать</span>
+                </label>
+              </div>
+            </div>
+          </form>
+          -->
+          <form action="" class="form">
+            <div class="form__row">
+              <div class="form__column form__column--left form__column--inputs">
+                <label class="input input--text input--w-50">
+                  <div class="input__title">Имя</div>
+                  <input type="text" name="" id="" class="input__text">
+                </label>
+                <label class="input input--text input--w-50">
+                  <div class="input__title">Телефон</div>
+                  <input placeholder="89212264923" type="text" name="" id="" class="input__text">
+                </label>
+                <label class="input input--text input--w-100">
+                  <div class="input__title">Улица</div>
+                  <input type="text" name="" id="" class="input__text">
+                </label>
+              </div>
+              <div class="form__column form__column--right form__column--inputs">
+                <label class="input input--textarea">
+                  <div class="input__title">Комментарий</div>
+                  <textarea name="" class="input__text input__text--textarea"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__column form__column--left form__column--inputs">
+                <label class="input input--text input--w-25">
+                  <div class="input__title">Дом</div>
+                  <input type="text" name="" id="" class="input__text ">
+                </label>
+                <label class="input input--text input--w-25">
+                  <div class="input__title">Корпус</div>
+                  <input type="text" name="" id="" class="input__text">
+                </label>
+                <label class="input input--text input--w-25">
+                  <div class="input__title">Квартира</div>
+                  <input type="text" name="" id="" class="input__text">
+                </label>
+                <label class="input input--text input--w-25">
+                  <div class="input__title">Этаж</div>
+                  <input type="text" name="" id="" class="input__text">
+                </label>
+              </div>
+              <div class="form__column form__column--right form__column--radio">
+                <label class="input input--radio input--w-25">
+                  <input  class="input__radio" name="radio" type="radio">
+                  <span class="input__radio input__radio--visible"></span>
+                  <span class="input__title">Потребуется сдача</span>
+                </label>
+                <label class="input input--radio input--w-25">
+                  <input  class="input__radio" name="radio" type="radio">
+                  <span class="input__radio input__radio--visible"></span>
+                  <span class="input__title">Оплата по карте</span>
+                </label>
+                <label class="input input--checkbox input--w-100">
+                  <input  class="input__checkbox" name="radio" type="checkbox">
+                  <span class="input__checkbox input__checkbox--visible"></span>
+                  <span class="input__title">Не перезванивать</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__column form__column--left">
+              </div>
+              <div class="form__column form__column--right form__column--buttons">
+                <button type="submit" class="button button--bg-red">Заказать</button>
+                <button type="reset" class="button button--reset">Очистить</button>
+              </div>
             </div>
           </form>
         </div>
