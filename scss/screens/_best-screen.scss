@@ -4,7 +4,7 @@
   background-size: cover;
 
   .container {
-    width: 921px;
+    width: rem(921);
     display: flex;
     flex-wrap: column nowrap;
     justify-content: center;

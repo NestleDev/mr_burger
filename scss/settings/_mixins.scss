@@ -2,3 +2,7 @@
   width: 100vw;
   height: 100vh; 
 }
+
+@function rem($px) {
+  @return $px / 14 + 0rem;
+}

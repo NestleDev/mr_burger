@@ -1,7 +1,7 @@
 .first-screen {
   @include screen();
-  padding-top: 12px;
-  padding-bottom: 41px;
+  padding-top: rem(12);
+  padding-bottom: rem(41);
   background-image: url('../img/first-screen/bg.png');
   background-size: cover;
   position: relative;
@@ -20,7 +20,7 @@
   }
 
   .container {
-    width: 940px;
+    width: rem(940);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;

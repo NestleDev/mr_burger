@@ -42,12 +42,11 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    color: #ffffff;
-    font-family: Gagalin;
-    font-size: 40px;
+    font-family: 'Gagalin';
+    font-size: rem(40);
     font-weight: 400;
     z-index: 10;
     
@@ -65,16 +64,13 @@
 
   &__text p {
     width: 90%;
-    margin-top: 61px;
-    color: #ffffff;
-    font-family: Ubuntu;
-    font-size: 14px;
+    margin-top: rem(61);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24);
   }
 
   &--active &__text {
-    width: 541px;
+    width: rem(541);
   }
 
   &--active &__title {

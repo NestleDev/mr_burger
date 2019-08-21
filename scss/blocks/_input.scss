@@ -1,5 +1,5 @@
 .input {
-  margin-right: 20px;
+  margin-right: rem(20);
 
   &:last-child {
     margin-right: 0;
@@ -21,7 +21,7 @@
   }
 
   &--checkbox {
-    margin-top: 25px;
+    margin-top: rem(25);
     flex: .34;
     display: flex;
     justify-content: flex-start;
@@ -29,33 +29,28 @@
   }
 
   &__title {
-    color: #ffffff;
-    font-family: Ubuntu;
-    font-size: 14px;
     font-weight: 300;
   }
 
   &__text {
     width: 100%;
-    margin-top: 10px;
+    margin-top: rem(10);
     color: #2f3234;
-    font-family: Ubuntu;
-    font-size: 14px;
     font-weight: 300;
-    line-height: 24px;
-    padding: 12px 21px;
-    border: 2px solid #d1cfcb;
+    line-height: rem(24);
+    padding: rem(12) rem(21);
+    border: rem(2) solid #d1cfcb;
     background-color: #ffffff;
     outline: none;
     border-radius: 7px;
 
     &:focus{
-      border: 2px solid #f9b43b;
+      border: rem(2) solid #f9b43b;
     }
 
     &--textarea {
       display: block;
-      height: 150px;
+      height: rem(150);
       resize: none;
     }
   }
@@ -64,9 +59,9 @@
     display: none;
 
     &--visible {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
+      margin-right: rem(10);
+      width: rem(15);
+      height: rem(15);
       border-radius: 50%;
       background-color: #ffffff;
       position: relative;
@@ -77,8 +72,8 @@
       content: "";
       position: absolute;
       display: block;
-      width: 7px;
-      height: 7px;
+      width: rem(7);
+      height: rem(7);
       border-radius: 50%;
       background-color: #e35028;
       top: 50%;
@@ -91,13 +86,12 @@
     display: none;
 
     &--visible {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
+      margin-right: rem(10);
+      width: rem(15);
+      height: rem(15);
       background-color: #ffffff;
       position: relative;
       display: block;
-      padding: 2px;
     }
 
     &:checked + &--visible:after {
@@ -106,7 +100,7 @@
       display: block;
       top: 10%;
       left: 10%;
-      bottom: 10%;
+      bottom: 5%;
       right: 5%;
       background-image: url('../img/order-screen/w128h1281338911632checkmark2.png');
       background-position: 0 0;

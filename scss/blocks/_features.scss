@@ -6,7 +6,7 @@
   align-items: center;
 
   &__list {
-    margin-top: 55px;
+    margin-top: rem(55);
     width: 100%;
     display: flex;
     justify-content: space-between;

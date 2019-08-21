@@ -1,11 +1,9 @@
 .team-card {
-  margin-top: 35px;
+  margin-top: rem(35);
 
   &__name {
     cursor: pointer;
-    color: #fff;
-    font-family: Gagalin;
-    font-size: 14px;
+    font-family: 'Gagalin';
     font-weight: 400;
     display: inline-flex;
     align-items: center;
@@ -13,15 +11,15 @@
     &:before {
       content: "";
       display: block;
-      margin-right: 10px;
-      border: 5px solid transparent;	
-      border-top: 5px solid #f9b43b;
+      margin-right: rem(10);
+      border: rem(5) solid transparent;	
+      border-top: rem(5) solid #f9b43b;
       border-bottom: 0;
     }
   }
 
   &__info {
-    margin-left: 20px;
+    margin-left: rem(20);
     display: flex;
     justify-content: flex-start;
     height: 0;
@@ -29,8 +27,8 @@
   }
 
   &__pic {
-    width: 100px;
-    height: 100px;
+    width: rem(100);
+    height: rem(100);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -41,26 +39,20 @@
   }
 
   &__desc {
-    width: 208px;
-    margin-left: 21px;
+    width: rem(208);
+    margin-left: rem(21);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   &__job {
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Ubuntu";
     font-weight: 700;
   }
 
   &__text {
-    color: #ffffff;
-    font-family: 'Ubuntu';
-    font-size: 14px;
     font-weight: 300;
-    line-height: 24.01px;
+    line-height: rem(24.01);
   }
 
   &--active &__name {
@@ -68,16 +60,16 @@
   }
 
   &--active &__info {
-    height: 100px;
-    margin-top: 17px;
+    height: rem(100);
+    margin-top: rem(17);
   }
 
   &--active &__name:before {
       content: "";
       display: block;
-      margin-right: 10px;
-      border: 5px solid transparent;	
-      border-bottom: 5px solid #f9b43b;
+      margin-right: rem(10);
+      border: rem(5) solid transparent;	
+      border-bottom: rem(5) solid #f9b43b;
       border-top: 0;
   }
 }
