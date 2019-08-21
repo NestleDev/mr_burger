@@ -9,7 +9,7 @@
 @import "./screens/first-screen";
 @import "./blocks/header";
 @import "./blocks/logo";
-@import "./blocks/menu";
+@import "./blocks/top-menu";
 @import "./blocks/button";
 @import "./blocks/introduction";
 @import "./blocks/title";
@@ -21,19 +21,19 @@
 /*best screen*/
 @import "./screens/best-screen";
 @import "./blocks/features";
-@import "./blocks/feature-card";
+@import "./blocks/features-card";
 
 /*team screen*/
 @import "./screens/team-screen";
 @import "./blocks/team";
-@import "./blocks/accordeon";
-@import "./blocks/member";
+@import "./blocks/accordeon-team";
+@import "./blocks/team-card";
 
 
 /*menu screen*/
 @import "./screens/menu-screen";
 @import "./blocks/accordeon-menu";
-@import "./blocks/menu-item";
+@import "./blocks/menu-card";
 
 
 /*reviews screen*/
@@ -49,4 +49,4 @@
 
 
 /*fixed menu*/
-@import "./blocks/points";
+@import "./blocks/fixed-menu";

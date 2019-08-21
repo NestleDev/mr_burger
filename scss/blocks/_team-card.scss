@@ -1,15 +1,12 @@
-.member {
-
+.team-card {
   margin-top: 35px;
 
   &__name {
-    margin-left: 20px;
     cursor: pointer;
     color: #fff;
     font-family: Gagalin;
     font-size: 14px;
     font-weight: 400;
-    line-height: 28.13px;
     display: inline-flex;
     align-items: center;
 
@@ -25,7 +22,6 @@
 
   &__info {
     margin-left: 20px;
-    margin-top: 17px;
     display: flex;
     justify-content: flex-start;
     height: 0;
@@ -73,6 +69,7 @@
 
   &--active &__info {
     height: 100px;
+    margin-top: 17px;
   }
 
   &--active &__name:before {

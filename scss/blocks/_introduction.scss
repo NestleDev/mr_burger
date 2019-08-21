@@ -2,27 +2,25 @@
   display: flex;
   justify-content: center;
 
-  &__logo {
+  &__pic {
     flex: 1;
     position: relative;
     display: flex;
     justify-content: flex-end;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 451px;
-      height: 241px;
-      position: absolute;
-      right: 0;
-      bottom: 115px;
-      background-image: url('../img/first-screen/drops.png');
-    }
   }
 
   &__img {
-    margin-right: 0;
+    max-width: 100%;
     display: block;
+  }
+
+  &__drops {
+    display: block;
+    width: 451px;
+    height: 241px;
+    position: absolute;
+    right: 0;
+    bottom: 115px;
   }
 
   &__desc {

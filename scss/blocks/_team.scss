@@ -6,8 +6,11 @@
     right: 0;
     background-color: #2f3234;
     opacity: 0.93;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    .container {
+        width: 347px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
