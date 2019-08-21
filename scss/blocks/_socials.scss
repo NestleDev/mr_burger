@@ -21,6 +21,7 @@
     height: rem(20);
     display: block;
     fill: #595959;
+    transition: .3s;
 
     &:hover {
       fill: #fff;

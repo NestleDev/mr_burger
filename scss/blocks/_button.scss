@@ -3,13 +3,14 @@
   border-radius: 6px;
   font-size: rem(13);
   text-transform: uppercase;
+  transition: 0.3s;
 
   &--bg-red {
     background-color: #e45028;
 
     &:hover {
       background-color: darken(#e45028, 10%);
-      transition: 0.3s;
+      
     }
   }
 
@@ -18,7 +19,7 @@
 
     &:hover {
       background-color: #1f2122;
-      transition: 0.3s;
+  
     }
   }
 

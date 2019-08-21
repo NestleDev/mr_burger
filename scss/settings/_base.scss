@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Ubuntu';
   font-size: rem(14);
