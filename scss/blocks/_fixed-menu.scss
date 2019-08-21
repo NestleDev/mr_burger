@@ -4,18 +4,6 @@
   right: rem(50);
   z-index: +10;
 
-  &__item:hover  &__link {
-    border: rem(1) solid rgba(255, 255, 255, 1);
-    transform: scale(1);
-    transition: 0.5s;
-  }
-
-  &__item--active &__link {
-    border: rem(1) solid rgba(255, 255, 255, 1);
-    transform: scale(1);
-    transition: 0.5s;
-  }
-
   &__link {
     display: block;
     width: rem(16);
@@ -37,5 +25,17 @@
       background-color: #fff;
       border-radius: 50%;
     }
+  }
+
+  &__item:hover  &__link {
+    border: rem(1) solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+  &__item--active &__link {
+    border: rem(1) solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+    transition: 0.5s;
   }
 }

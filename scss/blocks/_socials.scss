@@ -1,0 +1,30 @@
+.socials {
+  flex: 1;
+
+  &__list {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: rem(20);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__logo  {
+    width: rem(23);
+    height: rem(20);
+    display: block;
+    fill: #595959;
+
+    &:hover {
+      fill: #fff;
+    }
+  }
+
+}

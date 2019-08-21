@@ -4,5 +4,5 @@
 }
 
 @function rem($px) {
-  @return $px / 14 + 0rem;
+  @return $px / 16 + 0rem;
 }
