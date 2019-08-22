@@ -65,11 +65,11 @@
   }
 
   &--active &__name:before {
-      content: "";
-      display: block;
-      margin-right: rem(10);
-      border: rem(5) solid transparent;	
-      border-bottom: rem(5) solid #f9b43b;
-      border-top: 0;
+    content: "";
+    display: block;
+    margin-right: rem(10);
+    border: rem(5) solid transparent;	
+    border-bottom: rem(5) solid #f9b43b;
+    border-top: 0;
   }
 }

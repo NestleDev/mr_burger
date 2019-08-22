@@ -1,0 +1,18 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-left: 30px;
+
+  &__line {
+    display: block;
+    width: rem(24);
+    height: rem(4);
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: rem(5);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
