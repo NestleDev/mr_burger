@@ -109,3 +109,18 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  .input {
+
+    &--floor {
+      display: none;
+    }
+
+    &--appartment {
+      margin-right: 0;
+    }
+
+  }
+}

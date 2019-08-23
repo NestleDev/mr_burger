@@ -2,6 +2,7 @@
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   position: relative;
 
   &__list {
     display: inline-flex;
@@ -36,4 +37,28 @@
       text-decoration: underline;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .top-menu {
+    margin-right: rem(55);
+
+    &__list {
+      display: none;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  .top-menu {
+    margin-right: rem(55);
+
+    &__list {
+      display: none;
+    }
+  }
+
 }

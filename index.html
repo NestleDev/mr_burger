@@ -11,7 +11,7 @@
   <div class="wrapper">
     <main class="page">
       <section id="first" class="first-screen">
-        <div class="container">
+        <div class="first-screen__container">
           <header class="header">
             <svg alt="Лого Мистер Бургер" class="logo">
               <use xlink:href="./img/icons/sprite.svg#logo"></use>
@@ -41,11 +41,6 @@
                 </li>
               </ul>
               <a href="#order" class="button button--bg-red">Заказать</a>
-              <button class="hamburger">
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-              </button>
             </nav>
           </header>
           <div class="introduction">
@@ -68,7 +63,7 @@
         </div>
       </section>
       <section id="best" class="best-screen">
-        <div class="container">
+        <div class="best-screen__container">
           <div class="features">
             <h2 class="title title--color-black">Мы лучшие</h2>
             <ul class="features__list">
@@ -101,7 +96,7 @@
                   </svg>
                 </div>
                 <div class="features-card__desc">
-                  <h3 class="features-card__title">Натуральные</br>ингредиенты</h3>
+                  <h3 class="features-card__title">Натуральные  ингредиенты</h3>
                   <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
                 </div>
               </li>
@@ -109,74 +104,67 @@
           </div>
         </div>
       </section>
-      <!--
-      <section id="burgers" class="burgers-screen">
-      </section>
-      -->
       <section id="team" class="team-screen">
         <div class="team">
-          <div class="container">
+          <div class="team__container">
             <h2 class="title title--color-orange">Команда</h2>
             <ul class="accordeon-team">
-                <li class="team-card">
-                  <div class="team-card__name">Дэниэл Редклиф</div>
-                  <div class="team-card__info">
-                    <div class="team-card__pic">
-                      <img src="./img/team-screen/aphex.png" alt="Дэниэл" class="team-card__avatar">
-                    </div>
-                    <div class="team-card__desc">
-                      <div class="team-card__job">Оператор</div>
-                      <div class="team-card__text">
-                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                      </div>
+              <li class="team-card">
+                <div class="team-card__name">Дэниэл Редклиф</div>
+                <div class="team-card__info">
+                  <div class="team-card__pic">
+                    <img src="./img/team-screen/aphex.png" alt="Дэниэл" class="team-card__avatar">
+                  </div>
+                  <div class="team-card__desc">
+                    <div class="team-card__job">Оператор</div>
+                    <div class="team-card__text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                     </div>
                   </div>
-                </li>
-                <li class="team-card team-card--active">
-                  <div class="team-card__name">Ричард Джеймс</div>
-                  <div class="team-card__info">
-                    <div class="team-card__pic">
-                      <img src="./img/team-screen/aphex.png" alt="Ричард" class="team-card__avatar">
-                    </div>
-                    <div class="team-card__desc">
-                      <div class="team-card__job">Оператор
-                      </div>
-                      <div class="team-card__text">
-                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
-                      </div>
+                </div>
+              </li>
+              <li class="team-card team-card--active">
+                <div class="team-card__name">Ричард Джеймс</div>
+                <div class="team-card__info">
+                  <div class="team-card__pic">
+                    <img src="./img/team-screen/aphex.png" alt="Ричард" class="team-card__avatar">
+                  </div>
+                  <div class="team-card__desc">
+                    <div class="team-card__job">Оператор</div>
+                    <div class="team-card__text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                     </div>
                   </div>
-                </li>
-                <li class="team-card">
-                  <div class="team-card__name">Джейк Финн</div>
-                  <div class="team-card__info">
-                    <div class="team-card__pic">
-                      <img src="./img/team-screen/aphex.png" alt="Джейк" class="team-card__avatar">
-                    </div>
-                    <div class="team-card__desc">
-                      <div class="team-card__job">Оператор
-                      </div>
-                      <div class="team-card__text">
-                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
-                      </div>
+                </div>
+              </li>
+              <li class="team-card">
+                <div class="team-card__name">Джейк Финн</div>
+                <div class="team-card__info">
+                  <div class="team-card__pic">
+                    <img src="./img/team-screen/aphex.png" alt="Джейк" class="team-card__avatar">
+                  </div>
+                  <div class="team-card__desc">
+                    <div class="team-card__job">Оператор</div>
+                    <div class="team-card__text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                     </div>
                   </div>
-                </li>
-                <li class="team-card">
-                  <div class="team-card__name">Николай Иванов</div>
-                  <div class="team-card__info">
-                    <div class="team-card__pic">
-                      <img src="./img/team-screen/aphex.png" alt="Николай" class="team-card__avatar">
-                    </div>
-                    <div class="team-card__desc">
-                      <div class="team-card__job">Оператор
-                      </div>
-                      <div class="team-card__text">
-                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.  </p>
-                      </div>
+                </div>
+              </li>
+              <li class="team-card">
+                <div class="team-card__name">Николай Иванов</div>
+                <div class="team-card__info">
+                  <div class="team-card__pic">
+                    <img src="./img/team-screen/aphex.png" alt="Николай" class="team-card__avatar">
+                  </div>
+                  <div class="team-card__desc">
+                    <div class="team-card__job">Оператор</div>
+                    <div class="team-card__text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                     </div>
                   </div>
-                </li>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -312,12 +300,8 @@
           </ul>
         </div>
       </section>
-      <!--
-      <section id="how" class="how-screen">
-      </section>
-      -->
       <section id="order" class="order-screen">
-        <div class="container">
+        <div class="order-screen__container">
           <h2 class="title title--color-orange">Закажите доставку</h2>
           <form action="" class="form">
             <div class="form__column">
@@ -346,11 +330,11 @@
                   <div class="input__title">Корпус</div>
                   <input type="text" name="" id="" class="input__text">
                 </label>
-                <label class="input input--text">
+                <label class="input input--text input--appartment">
                   <div class="input__title">Квартира</div>
                   <input type="text" name="" id="" class="input__text">
                 </label>
-                <label class="input input--text">
+                <label class="input input--text input--floor">
                   <div class="input__title">Этаж</div>
                   <input type="text" name="" id="" class="input__text">
                 </label>
@@ -363,7 +347,7 @@
                   <textarea name="" class="input__text input__text--textarea"></textarea>
                 </label>
               </div>
-              <div class="form__row">
+              <div class="form__row form__row--centered">
                 <label class="input input--radio">
                   <input  class="input__radio" name="radio" type="radio">
                   <div class="input__radio input__radio--visible"></div>
@@ -375,14 +359,14 @@
                   <div class="input__title">Оплата по карте</div>
                 </label>
               </div>
-              <div class="form__row">
+              <div class="form__row form__row--centered">
                 <label class="input input--checkbox">
                   <input  class="input__checkbox" name="radio" type="checkbox">
                   <div class="input__checkbox input__checkbox--visible"></div>
                   <div class="input__title">Не перезванивать</div>
                 </label>
               </div>
-              <div class="form__row"> 
+              <div class="form__row form__row--centered"> 
                 <button type="submit" class="button button--bg-red">Заказать</button>
                 <button type="reset" class="button button--reset">Очистить</button>
               </div>
@@ -394,7 +378,7 @@
         <div class="map">
           <img src="./img/contacts-screen/map.png" alt="" class="map__img">
           <footer class="footer">
-              <div class="container">
+              <div class="footer__container">
                 <div class="contacts">
                   <address class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</address>
                   <a href="tel:+78123771377" class="contacts__phone">
@@ -469,6 +453,11 @@
         <a href="#contacts" class="fixed-menu__link"></a>
       </li>
     </ul>
+  </div>
+  <div class="hamburger">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
   </div>
 </body>
 </html>

@@ -7,10 +7,39 @@
     background-color: #2f3234;
     opacity: 0.93;
 
-    .container {
+    &__container {
         width: rem(347);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
+        height: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .team {
+        left: 0;
+
+        &__container {
+            width: rem(331);
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 331px) {
+
+    .team {
+        left: 0;
+
+        &__container {
+            width: rem(331);
+            align-items: center;
+        }
+    }
+
+}
+

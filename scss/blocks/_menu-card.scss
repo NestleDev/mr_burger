@@ -3,7 +3,7 @@
   display: flex;
 
   &__name {
-    width: 100px;
+    width: rem(100);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -74,3 +74,34 @@
     color: #f9b43b;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .menu-card {
+    
+    &__name {
+      width: rem(80);
+    }
+
+    &--active &__text {
+      width: rem(510);
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .menu-card {
+    
+    &__name {
+      width: rem(80);
+    }
+
+    &--active &__text {
+      width: 0;
+    }
+  }
+
+}
+

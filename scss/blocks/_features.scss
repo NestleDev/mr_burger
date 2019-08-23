@@ -12,3 +12,25 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  .features {
+
+    &__list {
+      margin-top: rem(59);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .features {
+
+    &__list {
+      margin-top: rem(38);
+      flex-direction: column;
+    }
+  }
+}
+

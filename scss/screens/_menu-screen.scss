@@ -10,3 +10,25 @@
     left: rem(102);
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .menu-screen {
+
+    .title {
+      top: rem(114);
+      left: rem(24);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .menu-screen {
+
+    .title {
+      top: rem(59);
+      left: rem(60);
+    }
+  }
+}

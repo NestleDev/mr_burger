@@ -24,3 +24,12 @@
     margin-right: rem(10);
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  .contacts {
+    align-items: center;
+  }
+}
+
+

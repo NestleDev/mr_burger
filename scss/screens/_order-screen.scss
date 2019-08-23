@@ -4,11 +4,35 @@
   background-image: url('../img/order-screen/bg-texture.png');
   background-size: cover;
 
-  .container {
+  &__container {
     width: rem(940);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    height: 100%;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+
+ .order-screen {
+
+  &__container {
+    width: rem(670);
+  }
+ }
+}
+
+@media screen and (max-width: 480px) {
+
+  .order-screen {
+
+    &__container {
+      width: rem(460);
+    }
+  }
+}
+  

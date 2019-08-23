@@ -4,7 +4,6 @@
   padding-bottom: rem(41);
   background-image: url('../img/first-screen/bg.png');
   background-size: cover;
-  position: relative;
   z-index: 10;
 
   &:after {
@@ -19,11 +18,37 @@
     z-index: -10;
   }
 
-  .container {
-    width: rem(940);
+  &__container {
+    max-width: rem(940);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    height: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  .first-screen {
+
+    &__container {
+      width: rem(713);
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  .first-screen {
+
+    &__container {
+      width: rem(441);
+      
+    }
+  }
+
+}
+
