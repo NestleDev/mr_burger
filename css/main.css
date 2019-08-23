@@ -386,7 +386,6 @@ body {
   font-size: 0.875rem;
   color: #fff;
   font-weight: 500;
-  overflow: hidden;
 }
 
 * {
@@ -1280,7 +1279,6 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 50%;
 }
 
 .menu-card {
