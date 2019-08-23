@@ -670,7 +670,6 @@ img {
 }
 
 .introduction__img {
-  margin-left: 2.125rem;
   max-width: 100%;
   display: block;
 }
@@ -1281,6 +1280,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  max-width: 50%;
 }
 
 .menu-card {
@@ -1383,7 +1383,7 @@ img {
     width: 5rem;
   }
   .menu-card--active .menu-card__text {
-    width: 31.875rem;
+    width: 32.9375rem;
   }
 }
 
