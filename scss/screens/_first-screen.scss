@@ -34,7 +34,7 @@
   .first-screen {
 
     &__container {
-      width: rem(713);
+      max-width: rem(713);
     }
   }
 
@@ -45,7 +45,7 @@
   .first-screen {
 
     &__container {
-      width: rem(441);
+      max-width: rem(441);
       
     }
   }

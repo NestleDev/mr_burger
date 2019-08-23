@@ -4,7 +4,7 @@
   background-size: cover;
 
   &__container {
-    width: rem(921);
+    max-width: rem(921);
     display: flex;
     flex-wrap: column nowrap;
     justify-content: center;
@@ -13,11 +13,11 @@
     height: 100%;
 
     @media screen and (max-width: 768px) {
-      width: rem(699);
+      max-width: rem(699);
     }
 
     @media screen and (max-width: 480px) {
-      width: rem(441);
+      max-width: rem(441);
     }
   }
 }
