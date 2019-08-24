@@ -1,34 +1,21 @@
 .features {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &__list {
-    margin-top: rem(55);
+    margin-top: rem(55px);
     width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  
-  .features {
-
-    &__list {
-      margin-top: rem(59);
+    @include tablets {
+      margin-top: rem(59px);
     }
-  }
-}
 
-@media screen and (max-width: 480px) {
-
-  .features {
-
-    &__list {
-      margin-top: rem(38);
+    @include phones {
+      margin-top: rem(38px);
       flex-direction: column;
     }
   }

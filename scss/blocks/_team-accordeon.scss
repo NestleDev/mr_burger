@@ -1,0 +1,19 @@
+.team-accordeon {
+  width: rem(347px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: rem(46px);
+
+  @include tablets {
+    margin-top: rem(49px);
+    align-items: center;
+  }
+
+  @include phones {
+    margin-top: rem(49px);
+    width: rem(331px);
+    align-items: center;
+  }
+}

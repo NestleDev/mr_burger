@@ -1,6 +1,9 @@
 .header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablets {
+    padding-right: rem(87px);
+  }
 }

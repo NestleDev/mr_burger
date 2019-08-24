@@ -1,0 +1,17 @@
+.best {
+  background: url(../../img/best-screen/bg.png) center center / cover no-repeat;
+
+  &__container {
+    max-width: rem(921px);
+    justify-content: center;
+    height: 100%;
+
+    @include tablets {
+      width: rem(699px);
+    }
+
+    @include phones {
+      width: rem(441px);
+    }
+  }
+}

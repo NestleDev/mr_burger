@@ -4,6 +4,16 @@
   position: relative;
   background-color: #000;
 
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+
+  @include phones {
+    width: 50%;
+    height: 25%;
+  }
+
   &__cover {
     width: 100%;
     height: 100%;
@@ -21,11 +31,24 @@
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    width: rem(225);
+    width: rem(225px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @include tablets {
+      align-items: center;
+      width: rem(275px);
+    }
+
+    @include phones {
+      width: rem(128px);
+      
+      p {
+        display: none;
+      }
+    }
   }
   
   &:hover &__desc {
@@ -41,57 +64,21 @@
   &__costumer {
     font-family: 'Gagalin';
     font-weight: 400;
-    margin-bottom: rem(25);
+    margin-bottom: rem(25px);
+
+    @include phones {
+      font-size: rem(24px);
+      text-align: center;
+    }
   }
   
   &__text {
     font-weight: 300;
-    line-height: rem(24);
-    margin-bottom: rem(17);
-  }
-}
+    line-height: rem(24px);
+    margin-bottom: rem(17px);
 
-@media screen and (max-width: 768px) {
-
-  .review-card {
-    width: 50%;
-    height: 25%;
-    position: relative;
-    background-color: #000;
-
-    &__desc {
-      align-items: center;
-      width: rem(275);
-
-      p {
-        text-align: center;
-      }
-    }
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-
-  .review-card {
-    width: 50%;
-    height: 25%;
-    position: relative;
-    background-color: #000;
-
-    &__desc {
-      align-items: center;
-      width: rem(128);
-
-      p {
-        display: none;
-      }
-    }
-
-    &__costumer {
-      font-size: 24px;
+    @include tablets {
       text-align: center;
     }
   }
-
 }

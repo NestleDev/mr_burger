@@ -1,14 +1,9 @@
 .scroll-down {
-  width: rem(29);
-  height: rem(14);
+  align-self: center;
   transition: .2s;
-  
-  &:hover {
-    transform: scale(2);
-  }
 
   &__img {
-    height: 100%;
-    max-width: 100%;
+    width: rem(29px);
+    height: rem(14px);
   }
 }

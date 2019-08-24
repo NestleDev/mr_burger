@@ -1,38 +1,25 @@
 .hamburger {
   display: none;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: rem(30px);
   position: fixed;
-  top: rem(35);
-  right: rem(33);  
+  top: rem(35px);
+  right: rem(33px);  
+
+  @include tablets {
+    display: block;
+  }
 
   &__line {
     display: block;
-    width: rem(24);
-    height: rem(4);
+    width: rem(24px);
+    height: rem(4px);
     background-color: #fff;
     border-radius: 2px;
-    margin-bottom: rem(5);
+    margin-bottom: rem(5px);
 
     &:last-child {
       margin-bottom: 0;
     }
   }
-}
-
-@media screen and (max-width: 768px) {
-  
-  .hamburger {
-    display: block;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-  
-  .hamburger {
-    display: block;
-    right: rem(24); 
-  }
-
 }

@@ -1,93 +1,70 @@
 .features-card {
-  width: 31%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &__logo {
-    height: rem(89);
-    width: rem(97);
-    display: flex;
-    justify-content: center;
-  }
-
-  &__img {
-    height: 100%;
-    max-width: 100%;
-  }
-  
-  &__desc {
-    text-align: center;
-  }
-  
-  &__title {
-    margin-top: rem(31);
-    color: #2f3234;
-    font-family: 'Lifehack';
-    font-size: rem(24);
-    font-weight: 500;
-    line-height: rem(28.14);
-    letter-spacing: rem(-0.6);
-  }
-
-  p {
-    margin-top: rem(25);
-    opacity: 0.8;
-    color: #2f3234;
-    font-weight: 300;
-    line-height: rem(24.07);
-  }
-}
-
-@media screen and (max-width: 480px) {
-   
-  .features-card {
+  @include phones {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: rem(51);
+    justify-content: flex-start;
+    margin-bottom: rem(51px);
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
 
-    &__logo {
-      width: 20%;
-    }
-  
-    &__img {
-      height: 100%;
-      max-width: 100%;
-    }
+  &__logo {
+    max-height: rem(89px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
-    &__desc {
-      width: 75%;
-      display: flex;
-      flex-flow: column nowrap;
+    @include phones {
+      max-width: rem(97px);
+      flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
     }
-    
-    &__title {
-      margin-top: 0;
-      color: #2f3234;
-      font-family: 'Lifehack';
-      font-size: rem(24);
-      font-weight: 500;
-      line-height: rem(28.14);
-      letter-spacing: rem(-0.6);
-    }
+  }
+
+  &__img {
+    width: rem(97px);
+    height: rem(89px);
+  }
   
-    p {
+  &__desc {
+    padding: rem(1px);
+    text-align: center;
+
+    @include phones {
+      padding: 0;
+      margin-left: rem(26px);
       text-align: left;
-      margin-top: rem(25);
-      opacity: 0.8;
-      color: #2f3234;
-      font-weight: 300;
-      line-height: rem(24.07);
+    }
+  }
+  
+  &__title {
+    margin-top: rem(31px);
+    color: #2f3234;
+    font-family: 'Lifehack';
+    font-size: rem(24px);
+    font-weight: 500;
+    line-height: rem(28.14px);
+    letter-spacing: rem(-0.6px);
+
+    @include phones {
+      margin-top: 0;
     }
   }
 
-  
+  p {
+    margin-top: rem(25px);
+    opacity: 0.8;
+    color: #2f3234;
+    font-weight: 300;
+    line-height: rem(24.07px);
+  }
 }

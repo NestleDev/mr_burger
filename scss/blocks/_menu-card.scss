@@ -3,7 +3,7 @@
   display: flex;
 
   &__name {
-    width: rem(100);
+    width: rem(100px);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,10 @@
     align-items: center;
     cursor: pointer;
     position: relative;
+
+    @include tablets {
+      width: rem(80px);
+    }
 
     &:after {
       content: "";
@@ -40,11 +44,11 @@
   }
 
   &__title {
-    margin-bottom: rem(40);
+    margin-bottom: rem(40px);
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-family: 'Gagalin';
-    font-size: rem(40);
+    font-size: rem(40px);
     font-weight: 400;
     z-index: 10;
   }
@@ -61,47 +65,20 @@
 
   &__text p {
     width: 90%;
-    margin-top: rem(61);
+    margin-top: rem(61px);
     font-weight: 300;
-    line-height: rem(24);
+    line-height: rem(24px);
   }
 
   &--active &__text {
-    width: rem(541);
+    width: rem(541px);
+
+    @include tablets {
+      width: rem(527px);
+    }
   }
 
   &--active &__title {
     color: #f9b43b;
   }
 }
-
-@media screen and (max-width: 768px) {
-
-  .menu-card {
-    
-    &__name {
-      width: rem(80);
-    }
-
-    &--active &__text {
-      width: rem(527);
-    }
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-
-  .menu-card {
-    
-    &__name {
-      width: rem(80);
-    }
-
-    &--active &__text {
-      width: 0;
-    }
-  }
-
-}
-

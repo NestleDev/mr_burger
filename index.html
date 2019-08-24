@@ -10,8 +10,8 @@
 <body>
   <div class="wrapper">
     <main class="page">
-      <section id="first" class="first-screen">
-        <div class="first-screen__container">
+      <section id="first" class="screen start">
+        <div class="container start__container">
           <header class="header">
             <svg alt="Лого Мистер Бургер" class="logo">
               <use xlink:href="./img/icons/sprite.svg#logo"></use>
@@ -43,16 +43,18 @@
               <a href="#order" class="button button--bg-red">Заказать</a>
             </nav>
           </header>
-          <div class="introduction">
-            <div class="introduction__pic">
-              <img src="./img/first-screen/steam.png" alt="Большой вкусный бургер" class="introduction__img">
-              <svg  class="introduction__drops">
-                <use xlink:href="./img/icons/sprite.svg#drops"></use>
-              </svg>
+          <div class="start__content">
+            <div class="start__picture">
+              <div class="start__picture-wrap">
+                <img src="./img/first-screen/steam.png" alt="Большой вкусный бургер" class="start__picture-burger">
+                <svg  class="start__picture-drops">
+                  <use xlink:href="./img/icons/sprite.svg#drops"></use>
+                </svg>
+              </div>
             </div>
-            <div class="introduction__desc">
+            <div class="start__description">
               <h1 class="title title--color-orange">Мы делаем</h1>
-              <h2 class="introduction__subtitle">натуральные<br>бургеры</h2>
+              <h2 class="start__subtitle">натуральные<br>бургеры</h2>
             </div>
           </div>
           <a href="#best" class="scroll-down">
@@ -62,8 +64,8 @@
           </a>
         </div>
       </section>
-      <section id="best" class="best-screen">
-        <div class="best-screen__container">
+      <section id="best" class="screen best">
+        <div class="container best__container">
           <div class="features">
             <h2 class="title title--color-black">Мы лучшие</h2>
             <ul class="features__list">
@@ -96,7 +98,7 @@
                   </svg>
                 </div>
                 <div class="features-card__desc">
-                  <h3 class="features-card__title">Натуральные  ингредиенты</h3>
+                  <h3 class="features-card__title">Натуральные ингредиенты</h3>
                   <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
                 </div>
               </li>
@@ -104,102 +106,101 @@
           </div>
         </div>
       </section>
-      <section id="team" class="team-screen">
-        <div class="team">
+      <section id="team" class="screen team">
           <div class="team__container">
-            <h2 class="title title--color-orange">Команда</h2>
-            <ul class="accordeon-team">
-              <li class="team-card">
-                <div class="team-card__name">Дэниэл Редклиф</div>
-                <div class="team-card__info">
-                  <div class="team-card__pic">
-                    <img src="./img/team-screen/aphex.png" alt="Дэниэл" class="team-card__avatar">
-                  </div>
-                  <div class="team-card__desc">
-                    <div class="team-card__job">Оператор</div>
-                    <div class="team-card__text">
-                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+            <div class="team__content">
+              <h2 class="title title--color-orange">Команда</h2>
+              <ul class="team-accordeon">
+                <li class="team-card">
+                  <div class="team-card__name">Дэниэл Редклиф</div>
+                  <div class="team-card__info">
+                    <div class="team-card__pic">
+                      <img src="./img/team-screen/aphex.png" alt="Дэниэл" class="team-card__avatar">
+                    </div>
+                    <div class="team-card__desc">
+                      <div class="team-card__job">Оператор</div>
+                      <div class="team-card__text">
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="team-card team-card--active">
-                <div class="team-card__name">Ричард Джеймс</div>
-                <div class="team-card__info">
-                  <div class="team-card__pic">
-                    <img src="./img/team-screen/aphex.png" alt="Ричард" class="team-card__avatar">
-                  </div>
-                  <div class="team-card__desc">
-                    <div class="team-card__job">Оператор</div>
-                    <div class="team-card__text">
-                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </li>
+                <li class="team-card team-card--active">
+                  <div class="team-card__name">Ричард Джеймс</div>
+                  <div class="team-card__info">
+                    <div class="team-card__pic">
+                      <img src="./img/team-screen/aphex.png" alt="Ричард" class="team-card__avatar">
+                    </div>
+                    <div class="team-card__desc">
+                      <div class="team-card__job">Оператор</div>
+                      <div class="team-card__text">
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="team-card">
-                <div class="team-card__name">Джейк Финн</div>
-                <div class="team-card__info">
-                  <div class="team-card__pic">
-                    <img src="./img/team-screen/aphex.png" alt="Джейк" class="team-card__avatar">
-                  </div>
-                  <div class="team-card__desc">
-                    <div class="team-card__job">Оператор</div>
-                    <div class="team-card__text">
-                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </li>
+                <li class="team-card">
+                  <div class="team-card__name">Джейк Финн</div>
+                  <div class="team-card__info">
+                    <div class="team-card__pic">
+                      <img src="./img/team-screen/aphex.png" alt="Джейк" class="team-card__avatar">
+                    </div>
+                    <div class="team-card__desc">
+                      <div class="team-card__job">Оператор</div>
+                      <div class="team-card__text">
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="team-card">
-                <div class="team-card__name">Николай Иванов</div>
-                <div class="team-card__info">
-                  <div class="team-card__pic">
-                    <img src="./img/team-screen/aphex.png" alt="Николай" class="team-card__avatar">
-                  </div>
-                  <div class="team-card__desc">
-                    <div class="team-card__job">Оператор</div>
-                    <div class="team-card__text">
-                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                </li>
+                <li class="team-card">
+                  <div class="team-card__name">Николай Иванов</div>
+                  <div class="team-card__info">
+                    <div class="team-card__pic">
+                      <img src="./img/team-screen/aphex.png" alt="Николай" class="team-card__avatar">
+                    </div>
+                    <div class="team-card__desc">
+                      <div class="team-card__job">Оператор</div>
+                      <div class="team-card__text">
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="menu" class="menu-screen">
-        <h2 class="title title--color-white">Меню</h2>
-        <ul class="accordeon-menu">
-          <li class="menu-card menu-card--active">
-            <div class="menu-card__name menu-card__name--meat">
-              <div class="menu-card__title">Для мясоедов</div>
+                </li>
+              </ul>
             </div>
+          </div>
+      </section>
+      <section id="menu" class="screen menu">
+        <h2 class="title title--color-white">Меню</h2>
+        <ul class="menu-accordeon">
+          <li class="menu-card">
+            <a href="#" class="menu-card__name menu-card__name--meat">
+              <div class="menu-card__title">Для мясоедов</div>
+            </a>
             <div class="menu-card__text">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit sunt odit obcaecati explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus commodi maxime! Incidunt sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sequi! Animi ut nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab consequatur ad, esse voluptas pariatur optio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aut quibusdam beatae fugit exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in atque dicta molestias laudantium earum doloremque suscipit.</p>
             </div>
           </li>
           <li class="menu-card">
-            <div class="menu-card__name menu-card__name--vegan">
+            <a href="#" class="menu-card__name menu-card__name--vegan">
               <div class="menu-card__title">Вегетарианское</div>
-            </div>
+            </a>
             <div class="menu-card__text">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo ea veritatis molestias? Sapiente obcaecati reprehenderit et nemo tempore quibusdam, dicta, neque repellat fuga id voluptatibus incidunt quis debitis asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit placeat itaque quidem consectetur eius perspiciatis totam odit debitis aperiam, sed laborum? Natus voluptate, ut eius quam nobis aspernatur iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quibusdam dolores, delectus, modi possimus ad perspiciatis quis nam saepe facere fugit ratione, quia temporibus laboriosam culpa sunt quod necessitatibus quaerat?</p>
             </div>
           </li>
           <li class="menu-card">
-            <div class="menu-card__name menu-card__name--diet">
+            <a href="#" class="menu-card__name menu-card__name--diet">
               <div class="menu-card__title">Диетическое</div>
-            </div>
+            </a>
             <div class="menu-card__text">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos vel beatae sit non nam esse ut qui iusto vitae nulla eligendi quos, eaque nihil eos perferendis id possimus voluptates. Vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore temporibus illo, cumque id earum ipsa impedit! Laborum eveniet maiores ab qui quisquam dignissimos omnis eius, alias quos doloremque. Nulla, qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quibusdam dolores, delectus, modi possimus ad perspiciatis quis nam saepe facere fugit ratione, quia temporibus laboriosam culpa sunt quod necessitatibus quaerat?</p>
             </div>
           </li>
         </ul>
-      </section> 
-      <section id="reviews" class="reviews-screen">
-        <div class="reviews">
+      </section>
+      <section id="reviews" class="screen reviews">
           <ul class="reviews__list">
             <li class="review-card">
               <div class="review-card__cover">
@@ -298,10 +299,9 @@
                 </div>
             </li>
           </ul>
-        </div>
       </section>
-      <section id="order" class="order-screen">
-        <div class="order-screen__container">
+      <section id="order" class="screen order">
+        <div class="container">
           <h2 class="title title--color-orange">Закажите доставку</h2>
           <form action="" class="form">
             <div class="form__column">
@@ -374,7 +374,7 @@
           </form>
         </div>
       </section>
-      <section id="contacts" class="contacts-screen">
+      <section id="contacts" class="screen contacts">
         <div class="map">
           <img src="./img/contacts-screen/map.png" alt="" class="map__img">
           <footer class="footer">

@@ -3,41 +3,27 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: rem(10);
-  padding-bottom: rem(10);
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
   background-color: #101010;
 
   &__container {
-    width: rem(940);
+    width: 95%;
+    max-width: rem(940px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  
-  .footer {
-
-    &__container {
-      width: rem(720);
+    @include tablets {
+      max-width: rem(720px);
     }
-  }
 
-}
-
-@media screen and (max-width: 480px) {
-  
-  .footer {
-
-    &__container {
-      width: rem(275);
+    @include phones {
+      max-width: rem(275px);
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
   }
-
 }

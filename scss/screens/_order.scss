@@ -1,0 +1,34 @@
+.order {
+  background-image: url('../img/order-screen/bg-texture.png');
+  background-size: cover;
+  background-color: #000;
+
+  .container {
+    width: 100%;
+    max-width: rem(940px);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @include tablets {
+      max-width: rem(670px);
+    }
+
+    @include phones {
+      max-width: rem(460px);
+    }
+  }
+
+  .title {
+
+    @include tablets {
+      text-align: center;
+    }
+
+
+    @include phones {
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+}

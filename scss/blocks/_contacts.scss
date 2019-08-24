@@ -4,13 +4,17 @@
   flex-direction: column;
   align-items: flex-start;
 
+  @include phones {
+    align-items: center;
+  }
+
   &__address {
     font-weight: 300;
     font-style: normal;
   }
 
   &__phone {
-    margin-top: rem(10);
+    margin-top: rem(10px);
     color: #e45028;
     font-weight: 700;
     display: flex;
@@ -19,17 +23,8 @@
 
   &__phone-logo {
     display: block;
-    width: rem(12);
-    height: rem(12);
-    margin-right: rem(10);
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(10px);
   }
 }
-
-@media screen and (max-width: 480px) {
-
-  .contacts {
-    align-items: center;
-  }
-}
-
-

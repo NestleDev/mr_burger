@@ -1,15 +1,18 @@
 .title {
-  font-family: 'Gagalin';
-  font-size: rem(72);
+  font-family: "Gagalin";
+  font-size: rem(72px);
   font-weight: 400;
-  text-align: center;
+
+  @include phones {
+    font-size: rem(63px);
+  }
 
   &--color-orange {
-    color: #f9b43b;
+    color: $orange;
   }
 
   &--color-black {
-    color: #2f3234;
+    color: $black;
   }
 
   &--color-white {

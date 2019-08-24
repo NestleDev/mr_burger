@@ -1,59 +1,47 @@
-/*import settings*/
-@import "./settings/vars";
+$red: #e45028;
+$black: #2f3234;
+$orange: #f9b43b;
+
+
 @import "./settings/fonts";
 @import "./settings/mixins";
 @import "./settings/normalize";
 @import "./settings/base";
 
-/*first screen*/
-@import "./screens/first-screen";
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/fixed-menu";
+@import "./blocks/hamburger";
+
+
+@import "./screens/start";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/top-menu";
-@import "./blocks/button";
-@import "./blocks/hamburger";
-@import "./blocks/introduction";
-@import "./blocks/title";
 @import "./blocks/scroll-down";
 
-/*burgers screen*/
-@import "./screens/burgers-screen";
-
-/*best screen*/
-@import "./screens/best-screen";
+@import "./screens/best";
 @import "./blocks/features";
 @import "./blocks/features-card";
 
-/*team screen*/
-@import "./screens/team-screen";
-@import "./blocks/team";
-@import "./blocks/accordeon-team";
+@import "./screens/team";
+@import "./blocks/team-accordeon";
 @import "./blocks/team-card";
 
 
-/*menu screen*/
-@import "./screens/menu-screen";
-@import "./blocks/accordeon-menu";
+@import "./screens/menu";
+@import "./blocks/menu-accordeon";
 @import "./blocks/menu-card";
 
-
-/*reviews screen*/
-@import "./screens/reviews-screen";
-@import "./blocks/reviews";
+@import "./screens/reviews";
 @import "./blocks/review-card";
 
-/*order screen*/
-@import "./screens/order-screen";
+@import "./screens/order";
 @import "./blocks/form";
 @import "./blocks/input";
 
-/*contacts screen*/
-@import "./screens/contacts-screen";
+@import "./screens/contacts";
 @import "./blocks/map";
 @import "./blocks/footer";
 @import "./blocks/contacts";
 @import "./blocks/socials";
-
-/*fixed menu*/
-@import "./blocks/fixed-menu";
-@import "./blocks/hamburger";

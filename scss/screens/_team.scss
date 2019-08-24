@@ -1,0 +1,44 @@
+.team {
+  background: url(../../img/team-screen/team.png) center center / cover no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: rem(542px);
+    background-color: #2f3234;
+    opacity: 0.93;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+      left: 0;
+      width: 100%;
+      max-width: rem(768px);
+    }
+
+    @include phones {
+      max-width: rem(480px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @include tablets {
+      align-items: center;
+    }
+  
+    @include phones {
+      align-items: center;
+    }
+  }
+}

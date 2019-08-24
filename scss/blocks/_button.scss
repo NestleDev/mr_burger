@@ -1,20 +1,20 @@
 .button {
-  padding: rem(13) rem(15);
+  padding: rem(13px) rem(15px);
   border-radius: 6px;
-  font-size: rem(13);
+  font-size: rem(13px);
   text-transform: uppercase;
   transition: 0.3s;
 
   &--bg-red {
-    background-color: #e45028;
+    background-color: $red;
 
     &:hover {
-      background-color: darken(#e45028, 10%);
+      background-color: darken($red, 10%);
     }
   }
 
   &--bg-black {
-    background-color: #2f3234;
+    background-color: $black;
 
     &:hover {
       background-color: #1f2122;
