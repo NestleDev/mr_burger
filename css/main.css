@@ -614,7 +614,7 @@ img {
 }
 
 .start {
-  background: url(../../img/first-screen/bg.png) center center/cover no-repeat;
+  background: url(../img/first-screen/bg.png) center center/cover no-repeat;
   padding-top: 0.75rem;
   padding-bottom: 2.5rem;
 }
@@ -864,7 +864,7 @@ img {
 }
 
 .best {
-  background: url(../../img/best-screen/bg.png) center center/cover no-repeat;
+  background: url(../img/best-screen/bg.png) center center/cover no-repeat;
 }
 
 .best__container {
@@ -1034,7 +1034,7 @@ img {
 }
 
 .team {
-  background: url(../../img/team-screen/team.png) center center/cover no-repeat;
+  background: url(../img/team-screen/team.png) center center/cover no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1293,7 +1293,7 @@ img {
 }
 
 .menu {
-  background: url(../../img/menu-screen/menu.png) center center/cover no-repeat;
+  background: url(../img/menu-screen/menu.png) center center/cover no-repeat;
   position: relative;
 }
 
