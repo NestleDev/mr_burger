@@ -1,8 +1,13 @@
 .team-card {
   width: 100%;
-  margin-top: rem(35px);
+  margin-bottom: rem(35px);
   display: flex;
   flex-direction: column;
+
+  &:last-child {
+
+    margin-bottom: 0;
+  }
 
 
   @include tablets {
@@ -56,7 +61,7 @@
   }
 
   &__desc {
-    margin-left: rem(40px);
+    margin-left: rem(22px);
     width: rem(208px);
     display: flex;
     flex-direction: column;
@@ -90,7 +95,8 @@
 
   &--active &__info {
     height: rem(100px);
-    margin-top: rem(17px);
+    margin-left: rem(20px);
+    margin-top: rem(16px);
 
     @include tablets {
       height: rem(200px);

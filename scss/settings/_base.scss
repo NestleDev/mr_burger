@@ -7,7 +7,6 @@ body {
   font-size: rem(14px);
   color: #fff;
   font-weight: 500;
-  overflow: hidden;
 }
 
 
@@ -15,16 +14,6 @@ body {
   box-sizing: border-box;
   padding: 0;
 }
-
-/*
-.wrapper {
-  position: relative;
-  width: 100%;
-  min-width: 940px + 20px;
-  min-height: 100%;
-  overflow: hidden;
-}
-*/
 
 .container {
   margin: 0 auto;
@@ -44,15 +33,9 @@ body {
 
 .screen {
   height: 100vh;
+  overflow: hidden;
 }
 
-/*
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-*/
 
 ul {
   margin: 0;

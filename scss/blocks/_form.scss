@@ -1,5 +1,5 @@
 .form {
-  margin-top: rem(44px);
+  margin-top: rem(34px);
   width: 100%;
   display: flex;
 
@@ -37,7 +37,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(15px);
 
     @include phones {
       &--centered {
