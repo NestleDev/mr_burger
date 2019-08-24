@@ -31,7 +31,7 @@
         "../scss/screens/_order.scss",
         "../scss/blocks/_form.scss",
         "../scss/blocks/_input.scss",
-        "../scss/screens/_contacts.scss",
+        "../scss/screens/contact-us.scss",
         "../scss/blocks/_map.scss",
         "../scss/blocks/_footer.scss",
         "../scss/blocks/_contacts.scss",
