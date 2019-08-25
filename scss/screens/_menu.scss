@@ -6,5 +6,15 @@
     position: absolute;
     top: rem(111px);
     left: rem(102px);
+
+    @include tablets {
+      top: rem(114px);
+      left: rem(24px);
+    }
+
+    @include tablets {
+      top: rem(59px);
+      left: rem(60px);
+    }
   }
 }
