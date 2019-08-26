@@ -568,6 +568,7 @@ img {
   position: fixed;
   top: 2.1875rem;
   right: 2.0625rem;
+  z-index: 20;
 }
 
 @media screen and (max-width: 768px) {
@@ -906,7 +907,7 @@ img {
   bottom: 44%;
   background: url(../img/icons/drops.svg) center center/contain no-repeat;
   left: 0;
-  height: 241px;
+  height: 15.0625rem;
   width: 100%;
 }
 
@@ -918,8 +919,8 @@ img {
 
 .introduction__picture-wrap {
   max-width: 26.0625rem;
-  -webkit-transform: translateY(-44px);
-          transform: translateY(-44px);
+  -webkit-transform: translateY(-2.75rem);
+          transform: translateY(-2.75rem);
 }
 
 @media screen and (max-width: 768px) {
@@ -935,8 +936,8 @@ img {
 
 @media screen and (max-width: 480px) {
   .introduction__picture-wrap {
-    width: 20.8125rem;
-    height: 339px;
+    max-width: 20.8125rem;
+    height: 21.1875rem;
   }
 }
 
@@ -1028,7 +1029,7 @@ img {
 
 .best__container {
   margin: 0 auto;
-  width: 98%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,13 +1169,11 @@ img {
 }
 
 .features-card__desc {
-  padding: 0.0625rem;
   text-align: center;
 }
 
 @media screen and (max-width: 480px) {
   .features-card__desc {
-    padding: 0;
     margin-left: 1.625rem;
     text-align: left;
   }

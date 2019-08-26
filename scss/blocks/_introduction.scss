@@ -31,7 +31,7 @@
       bottom: 44%;
       background: url(../img/icons/drops.svg) center center / contain no-repeat;
       left: 0;
-      height: 241px;
+      height: rem(241px);
       width: 100%;
 
       @include tablets {
@@ -41,7 +41,7 @@
 
     &-wrap {
       max-width: rem(417px);
-      transform: translateY(-44px);
+      transform: translateY(rem(-44px));
   
       @include tablets {
         align-self: center;
@@ -50,8 +50,8 @@
       }
   
       @include phones {
-        width: rem(333px);
-        height: (339px);
+        max-width: rem(333px);
+        height: rem(339px);
       }
     }
 

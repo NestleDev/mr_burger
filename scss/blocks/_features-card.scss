@@ -36,11 +36,9 @@
   }
   
   &__desc {
-    padding: rem(1px);
     text-align: center;
 
     @include phones {
-      padding: 0;
       margin-left: rem(26px);
       text-align: left;
     }

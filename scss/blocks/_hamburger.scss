@@ -5,6 +5,7 @@
   position: fixed;
   top: rem(35px);
   right: rem(33px);
+  z-index: 20;
 
   @include tablets {
     display: block;
