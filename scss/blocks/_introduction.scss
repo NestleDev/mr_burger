@@ -123,7 +123,10 @@
 
     @include tablets {
       width: 100%;
+      margin-top: rem(49px);
+      /*
       margin-top: rem(75px);
+      */
       justify-content: flex-start;
       align-items: center;
     }

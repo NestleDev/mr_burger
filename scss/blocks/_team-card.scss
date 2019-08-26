@@ -1,13 +1,16 @@
 .team-card {
   width: 100%;
+  /*
   margin-bottom: rem(35px);
+  */
+  margin-bottom: rem(8px);
+
   display: flex;
   flex-direction: column;
 
   &:last-child {
     margin-bottom: 0;
   }
-
 
   @include tablets {
     margin-bottom: rem(32px);
@@ -40,7 +43,9 @@
     justify-content: flex-start;
     height: 0;
     overflow: hidden;
+    /*
     padding-left: rem(20px);
+    */
     width: 100%;
 
     @include tablets {
@@ -70,8 +75,12 @@
 
     @include tablets {
       margin-left: 0;
+      justify-content: flex-start;
       width: 100%;
+      margin-top: rem(17px);
+      /*
       margin-top: rem(22px);
+      */
       text-align: center;
     }
   }
@@ -85,7 +94,8 @@
     line-height: rem(24.01px);
 
     @include tablets {
-      margin-top: rem(20px);
+      margin-top: rem(8px);
+      line-height: 2.2;
     }
   }
 
