@@ -12,11 +12,11 @@
     justify-content: space-between;
 
     @include tablets {
-      margin-top: rem(59px);
+      margin-top: rem(44px);
     }
 
     @include phones {
-      margin-top: rem(38px);
+      margin-top: rem(44px);
       flex-direction: column;
     }
   }

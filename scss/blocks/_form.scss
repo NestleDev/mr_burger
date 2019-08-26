@@ -4,7 +4,7 @@
   display: flex;
 
   @include tablets {
-    margin-top: rem(49px);
+    margin-top: rem(25px);
     width: rem(472px);
     flex-direction: row;
     flex-wrap: wrap;

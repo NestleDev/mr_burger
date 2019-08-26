@@ -28,6 +28,7 @@
       height: rem(6px);
       background-color: #fff;
       border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.6);
     }
   }
 
@@ -37,11 +38,13 @@
 
   &__item:hover  &__link {
     border: rem(1px) solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
     transform: scale(1);
     transition: 0.5s;
   }
 
   &__item--active &__link {
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
     border: rem(1px) solid rgba(255, 255, 255, 1);
     transform: scale(1);
     transition: 0.5s;

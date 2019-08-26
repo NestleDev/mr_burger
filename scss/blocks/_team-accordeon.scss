@@ -4,10 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: rem(36px);
+  margin-top: rem(40px);
 
   @include tablets {
-    margin-top: rem(49px);
+    margin-top: rem(40px);
     align-items: center;
   }
 

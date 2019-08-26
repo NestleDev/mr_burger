@@ -7,7 +7,7 @@
     height: 100%;
 
     @include tablets {
-      width: rem(699px);
+      max-width: rem(741px);
     }
 
     @include phones {

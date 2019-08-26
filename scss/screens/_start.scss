@@ -12,7 +12,8 @@
     }
 
     @include phones {
-      max-width: rem(441px);
+      max-width: 100%;
+      margin: 0;
     }
   }
 }
