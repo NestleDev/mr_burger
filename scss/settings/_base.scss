@@ -15,15 +15,6 @@ body {
   padding: 0;
 }
 
-.container {
-  margin: 0 auto;
-  position: relative;
-  max-width: rem(940px);
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-}
-
 .wrapper {
   position: relative;
   width: 100%;
@@ -34,7 +25,6 @@ body {
 .screen {
   height: 100vh;
   overflow: hidden;
-
 }
 
 

@@ -3,6 +3,7 @@
   padding-top: rem(12px);
   padding-bottom: rem(40px);
   position: relative;
+  z-index: 10;
 
   &:before {
     content: "";
@@ -12,10 +13,16 @@
     left: 0;
     bottom: 0;
     background: url(../img/first-screen/texture.png) center center / cover no-repeat;
+    z-index: -10;
 
   }
 
   &__container {
+    margin: 0 auto;
+    max-width: rem(940px);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     justify-content: space-between;
 
