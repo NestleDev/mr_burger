@@ -724,6 +724,17 @@ img {
   background: url(../img/first-screen/bg.png) center center/cover no-repeat;
   padding-top: 0.75rem;
   padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.start:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(../img/first-screen/texture.png) center center/cover no-repeat;
 }
 
 .start__container {
