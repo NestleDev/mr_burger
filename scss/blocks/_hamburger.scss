@@ -1,14 +1,18 @@
 .hamburger {
   display: none;
   cursor: pointer;
-  margin-left: rem(30px);
   position: fixed;
   top: rem(35px);
-  right: rem(33px);
+  right: 0;
   z-index: 20;
 
   @include tablets {
     display: block;
+    right: rem(30px);
+  }
+
+  @include phones {
+    right: rem(20px);
   }
 
   &__line {
@@ -18,7 +22,7 @@
     background-color: #fff;
     border-radius: 2px;
     margin-bottom: rem(5px);
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    box-shadow: 0 0 rem(10px) rgba(0,0,0,0.6);
 
     &:last-child {
       margin-bottom: 0;

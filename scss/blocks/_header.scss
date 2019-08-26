@@ -4,6 +4,10 @@
   align-items: center;
 
   @include tablets {
-    padding-right: rem(58px);
+    margin-right: rem(58px);
+  }
+
+  @include phones {
+    margin-right: rem(55px);
   }
 }

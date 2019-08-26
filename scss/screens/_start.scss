@@ -14,7 +14,6 @@
     bottom: 0;
     background: url(../img/first-screen/texture.png) center center / cover no-repeat;
     z-index: -10;
-
   }
 
   &__container {
@@ -31,8 +30,7 @@
     }
 
     @include phones {
-      max-width: 100%;
-      margin: 0;
+      max-width: rem(441px);
     }
   }
 }

@@ -40,6 +40,8 @@
     justify-content: flex-start;
     height: 0;
     overflow: hidden;
+    padding-left: rem(20px);
+    width: 100%;
 
     @include tablets {
       flex-direction: column;
