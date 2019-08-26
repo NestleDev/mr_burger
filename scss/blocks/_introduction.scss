@@ -17,17 +17,21 @@
   &__picture {
     width: 50.11%;
     height: 100%;
+    /*
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    */
     position: relative;
 
     @include tablets {
       width: 63.25%;
+      /*
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+      */
     }
 
     @include phones {
@@ -37,15 +41,24 @@
     &:after {
       content: "";
       position: absolute;
+      /*
       bottom: 41%;
+      */
+
       background: url(../img/icons/drops.svg) center center / contain no-repeat;
       right: 0;
+      top: 42%;
+      transform: translateY(-50%);
       width: 98%;
       height: rem(241px);
 
       @include tablets {
         width: 100%;
+        /*
         bottom: 28%;
+        */ 
+        top: 38%;
+
       }
 
       @include phones {
@@ -56,18 +69,28 @@
     }
 
     &-wrap {
+      position: absolute;
+      top: 46%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      width: 88.53%;
       max-width: rem(417px);
-      transform: translate(rem(-4px), rem(-25px));
   
       @include tablets {
+        /*
         transform: translateY(0);
+        */
         width: 100%;
       }
   
       @include phones {
+        /*
         align-self: center;
+        */
         max-width: rem(333px);
         height: rem(339px);
+        top: 44%;
+        left: 53%;
       }
     }
 
@@ -100,13 +123,16 @@
 
     @include tablets {
       width: 100%;
-      margin-top: rem(14px);
+      margin-top: rem(75px);
       justify-content: flex-start;
       align-items: center;
     }
-
+    
     @include phones {
+      margin: 0;
+      /*
       margin-top: rem(33px);
+      */
     }
   }
 
