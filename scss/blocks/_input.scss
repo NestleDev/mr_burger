@@ -14,7 +14,8 @@
   }
 
   &--radio {
-    flex: .34;
+    min-width: 34%;
+    flex-shrink: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,7 +23,7 @@
 
   &--checkbox {
     margin-top: rem(25px);
-    flex: .34;
+    min-width: 34%;
     display: flex;
     justify-content: flex-start;
     align-items: center;

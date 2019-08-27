@@ -2,9 +2,9 @@
   width: rem(347px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-top: rem(40px);
+  margin-top: rem(37px);
 
   @include tablets {
     margin-top: rem(40px);
@@ -13,7 +13,7 @@
   }
 
   @include phones {
-    margin-top: rem(49px);
+    margin-top: rem(23px);
     width: rem(331px);
     align-items: center;
   }

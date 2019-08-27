@@ -26,6 +26,10 @@
     }
   }
 
+  .title {
+    font-size: rem(50px);
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

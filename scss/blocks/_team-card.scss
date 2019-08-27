@@ -1,10 +1,6 @@
 .team-card {
   width: 100%;
-  /*
-  margin-bottom: rem(35px);
-  */
-  margin-bottom: rem(8px);
-
+  margin-bottom: rem(34px);
   display: flex;
   flex-direction: column;
 
@@ -13,15 +9,15 @@
   }
 
   @include tablets {
-    margin-bottom: rem(32px);
+    margin-bottom: rem(31px);
   }
 
-  &__name {
-    cursor: pointer;
+  &__link {
     font-family: 'Gagalin';
     font-weight: 400;
     display: inline-flex;
     align-items: center;
+    width: auto;
 
     @include tablets {
       font-size: rem(24px);
@@ -43,12 +39,11 @@
     justify-content: flex-start;
     height: 0;
     overflow: hidden;
-    /*
-    padding-left: rem(20px);
-    */
+    padding-left: rem(18px);
     width: 100%;
 
     @include tablets {
+      padding-left: 0;
       flex-direction: column;
       align-items: center;
     }
@@ -56,7 +51,7 @@
 
   &__pic {
     width: rem(100px);
-    min-height: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -71,16 +66,13 @@
     width: rem(208px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     @include tablets {
       margin-left: 0;
       justify-content: flex-start;
       width: 100%;
-      margin-top: rem(17px);
-      /*
-      margin-top: rem(22px);
-      */
+      margin-top: rem(20px);
       text-align: center;
     }
   }
@@ -90,28 +82,27 @@
   }
 
   &__text {
+    margin-top: rem(14px);
     font-weight: 300;
     line-height: rem(24.01px);
 
     @include tablets {
-      margin-top: rem(8px);
-      line-height: 2.2;
+      margin-top: rem(13px);
     }
   }
 
-  &--active &__name {
+  &--active &__link {
     color: #f9b43b;
 
   }
 
   &--active &__info {
-    height: rem(100px);
-    margin-left: 0;
-    margin-top: rem(16px);
+    height: rem(108px);
+    margin-top: rem(15px);
 
     @include tablets {
-      height: rem(200px);
       margin-top: rem(15px);
+      height: rem(196px);
     }
   }
 
