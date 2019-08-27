@@ -5,9 +5,6 @@
   position: relative;
   z-index: 10;
 
-  @include tablets {
-    height: 90vh;
-  }
 
   &:before {
     content: "";
