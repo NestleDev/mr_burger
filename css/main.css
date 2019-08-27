@@ -1436,8 +1436,10 @@ img {
   }
 }
 
-.team-card__trigger {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  .team-card__trigger {
+    text-align: center;
+  }
 }
 
 .team-card__link {

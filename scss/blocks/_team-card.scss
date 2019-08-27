@@ -13,7 +13,10 @@
   }
 
   &__trigger {
-    text-align: center;
+
+    @include tablets {
+      text-align: center;
+    }
   }
 
   &__link {
