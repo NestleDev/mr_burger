@@ -376,10 +376,6 @@ template {
   display: none;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: "Ubuntu";
   font-size: 0.875rem;
@@ -396,7 +392,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
   overflow: hidden;
 }
 
@@ -404,6 +399,20 @@ body {
   height: 100vh;
   min-height: 40.625rem;
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 58.75rem;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 ul {
@@ -727,17 +736,6 @@ img {
   padding-bottom: 2.5rem;
   position: relative;
   z-index: 10;
-  /*
-  @include phones {
-    max-height: rem(800px);
-  }
-  */
-}
-
-@media screen and (max-width: 768px) {
-  .start {
-    max-height: 64rem;
-  }
 }
 
 .start:before {
@@ -752,17 +750,6 @@ img {
 }
 
 .start__container {
-  margin: 0 auto;
-  max-width: 58.75rem;
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1126,20 +1113,9 @@ img {
 }
 
 .best__container {
-  margin: 0 auto;
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 57.5625rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1312,7 +1288,7 @@ img {
   right: 0;
   bottom: 0;
   top: 0;
-  width: 33.875rem;
+  width: 50%;
   background-color: #2f3234;
   opacity: 0.93;
   display: -webkit-box;
@@ -1906,41 +1882,47 @@ img {
 }
 
 .order {
-  background-image: url("../img/order-screen/bg-texture.png");
+  background-image: url("../img/order-screen/texture.png");
   background-size: cover;
-  background-color: #000;
+  position: relative;
 }
 
-.order .container {
-  margin: 0 auto;
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 58.75rem;
+.order:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/order-screen/bg.png");
+  background-size: cover;
+  z-index: 10;
+}
+
+.order__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .order .container {
+  .order__container {
     max-width: 41.875rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .order .container {
+  .order__container {
     max-width: 28.75rem;
   }
+}
+
+.order .title {
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
@@ -1952,7 +1934,6 @@ img {
 @media screen and (max-width: 480px) {
   .order .title {
     font-size: 3.125rem;
-    text-align: center;
   }
 }
 
@@ -1962,6 +1943,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
@@ -2200,12 +2182,6 @@ img {
 }
 
 .footer__container {
-  margin: 0 auto;
-  max-width: 58.75rem;
-  width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

@@ -1,17 +1,24 @@
 .order {
-  background-image: url('../img/order-screen/bg-texture.png');
+  background-image: url('../img/order-screen/texture.png');
   background-size: cover;
-  background-color: #000;
+  position: relative;
 
-  .container {
-    margin: 0 auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    max-width: rem(940px);
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/order-screen/bg.png');
+    background-size: cover;
+    z-index: 10;
+  }
+
+  &__container {
     justify-content: center;
     align-items: center;
-    height: 100%;
 
     @include tablets {
       max-width: rem(670px);
@@ -23,15 +30,14 @@
   }
 
   .title {
+    z-index: 10;
 
     @include tablets {
       text-align: center;
     }
 
-
     @include phones {
       font-size: rem(50px);
-      text-align: center;
     }
   }
 }
