@@ -727,6 +727,17 @@ img {
   padding-bottom: 2.5rem;
   position: relative;
   z-index: 10;
+  /*
+  @include phones {
+    max-height: rem(800px);
+  }
+  */
+}
+
+@media screen and (max-width: 768px) {
+  .start {
+    max-height: 64rem;
+  }
 }
 
 .start:before {

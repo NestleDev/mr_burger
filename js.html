@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Задачи по основам JS - 1</title>
+</head>
+<body>
+  <script>
+    document.write('<h2 style="text-align: center">' + 'Типы данных и переменные' + '</h2>');
+    var name = 'Андрей';
+    document.write(name + '<br>');
+    var name = 'Катя';
+    document.write(name + '<br>' + '<br>');
+
+    document.write('<h2 style="text-align: center">' + 'Условный оператор if' + '</h2>');
+    if (100 > 10) {
+      document.write('Утверждение истинно' + '<br>');
+    }
+    if (100 < 10) {
+      document.write('Утверждение истинно' + '<br>');
+    }
+    if (100 == 10) {
+      document.write('Утверждение истинно' + '<br>');
+    } else {
+      document.write('Утверждение ложно' + '<br>');
+    }
+    document.write('<br>');
+
+    document.write('<h2 style="text-align: center">' + 'Циклический оператор for' + '</h2>');
+    for (var i = 0; i < 10; i++) {
+      let iter = i + 1;
+      document.write('Итерация номер: ' + iter + '<br>');
+    }
+
+    document.write('<h2 style="text-align: center">' + 'Функции' + '</h2>');
+    function sum(p1, p2, p3) {
+      let result = p1 + p2 + p3;
+      return result;
+    }
+
+    result = sum(10, 20, 30);
+    document.write(result);
+    document.write('<br>');
+
+    result = sum(100, 10, 1);
+    document.write(result);
+    document.write('<br>');
+
+    document.write('<h2 style="text-align: center">' + 'Массивы и объекты' + '</h2>');
+
+    document.write('<h4 style="text-align: left">' + 'Задание 1' + '</h4>');
+    massive = new Array ('привет', 'loftschool');
+    massive.push('я изучаю', 'javascript');
+    document.write(massive.length);
+    document.write('<br>');
+    for (var i = 0; i < massive.length; i++) {
+      document.write(massive[i] + ' ');
+    }
+    document.write('<br>');
+
+    document.write('<h4 style="text-align: left">' + 'Задание 2' + '</h4>');
+    var numMassive = new Array();
+    for (var i = 0; i < 10; i++) {
+      numMassive[i] = Math.floor(Math.random() * (150 - 50) + 50); 
+    }
+
+    for (var i = 0; i < numMassive.length; i++) {
+      document.write(numMassive[i] + ' ');
+    }
+
+    document.write('<br>' + 'Элементы больше 100' + '<br>');
+
+    for  (var i = 0; i < numMassive.length; i++) {
+      if (numMassive[i] > 100) {
+        document.write(numMassive[i] + ' ');
+      }
+    }
+    document.write('<br>');
+    
+    document.write('<h4 style="text-align: left">' + 'Задание 3' + '</h4>');
+    var human = {
+      name: 'Андрей',
+      lastName: 'Тутин',
+      age: 31
+    }
+    document.write(human.name + ' ' + human.lastName + ' ' + human.age + '<br>');
+    human.iq = 60;
+    document.write('IQ ' + human.iq);
+    document.write('<br>');
+
+    document.write('<h4 style="text-align: left">' + 'Задание 4' + '</h4>');
+    function hello(human) {
+      var line = 'Привет, меня зовут ' + human.name + ' ' + human.lastName + ' и мне ' + human.age + ' лет!';
+      return line;
+    }
+
+    var greet = hello(human);
+    document.write(greet);
+
+  </script>
+</body>
+</html>
