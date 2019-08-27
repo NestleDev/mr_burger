@@ -402,6 +402,7 @@ body {
 
 .screen {
   height: 100vh;
+  min-height: 40.625rem;
   overflow: hidden;
 }
 
@@ -1433,6 +1434,10 @@ img {
   .team-card {
     margin-bottom: 1.9375rem;
   }
+}
+
+.team-card__trigger {
+  text-align: center;
 }
 
 .team-card__link {
