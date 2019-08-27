@@ -4,6 +4,9 @@
   padding-bottom: rem(40px);
   position: relative;
   z-index: 10;
+  @include tablets {
+    min-height: 100%;
+  }
 
   &:before {
     content: "";

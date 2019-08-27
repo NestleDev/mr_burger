@@ -728,6 +728,12 @@ img {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  .start {
+    min-height: 100%;
+  }
+}
+
 .start:before {
   content: "";
   position: absolute;
