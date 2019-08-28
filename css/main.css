@@ -376,6 +376,10 @@ template {
   display: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Ubuntu";
   font-size: 0.875rem;
@@ -1319,7 +1323,7 @@ img {
   }
 }
 
-.team .title {
+.team__title {
   font-size: 3.125rem;
 }
 
@@ -1355,6 +1359,22 @@ img {
   }
 }
 
+.team__accordeon {
+  margin-top: 2.3125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .team__accordeon {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__accordeon {
+    margin-top: 1.4375rem;
+  }
+}
+
 .team-accordeon {
   width: 21.6875rem;
   display: -webkit-box;
@@ -1370,12 +1390,10 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 2.3125rem;
 }
 
 @media screen and (max-width: 768px) {
   .team-accordeon {
-    margin-top: 2.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1387,7 +1405,6 @@ img {
 
 @media screen and (max-width: 480px) {
   .team-accordeon {
-    margin-top: 1.4375rem;
     width: 20.6875rem;
     -webkit-box-align: center;
         -ms-flex-align: center;

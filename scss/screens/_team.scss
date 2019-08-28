@@ -26,7 +26,7 @@
     }
   }
 
-  .title {
+  &__title {
     font-size: rem(50px);
   }
 
@@ -43,5 +43,17 @@
     @include phones {
       align-items: center;
     }
+  }
+
+  &__accordeon {
+    margin-top: rem(37px);
+
+    @include tablets {
+      margin-top: rem(40px);
+    }
+
+    @include phones {
+      margin-top: rem(23px);
+   }
   }
 }
